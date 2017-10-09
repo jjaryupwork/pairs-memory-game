@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" / >
+	<title>Pairs Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		  rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700|Montserrat" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="board">
+	<button id="abort">Abort game</button>
+	<div id="cards"></div>
+</div>
+<div id="leaders">
+	<div id="leadersCloseButton"><i class="material-icons">close</i></div>
+	<h1 class="win">You've completed the game!</h1>
+	<div class="stats">
+		<div class="stat" data-difficulty="0">
+			<div class="title">Developer</div>
+			<div class="list" data-items="0"></div><i class="material-icons">ac_unit</i>
+		</div>
+		<div class="stat" data-difficulty="1">
+			<div class="title">Easy</div>
+			<div class="list" data-items="0"></div><i class="material-icons">ac_unit</i>
+		</div>
+		<div class="stat" data-difficulty="2">
+			<div class="title">Medium</div>
+			<div class="list" data-items="0"></div><i class="material-icons">ac_unit</i>
+		</div>
+		<div class="stat" data-difficulty="3">
+			<div class="title">Extreme</div>
+			<div class="list" data-items="0"></div><i class="material-icons">ac_unit</i>
+		</div>
+	</div>
+</div>
+<form id="greeter">
+	<div id="leadersButton"><i class="material-icons">cake</i></div>
+	<h1>Hello!</h1>
+	<div class="n">
+		<input id="name" autocomplete="off" placeholder="Your name" name="name" required="required"/>
+		<label for="name">Your name?</label>
+	</div>
+	<div class="d">
+		<label>Difficulty</label>
+		<label class="op">
+			<input type="radio" name="difficulty" value="0"/><span class="l">Developer</span>
+		</label>
+		<label class="op">
+			<input type="radio" name="difficulty" value="1" checked="checked"/><span class="l">Easy</span>
+		</label>
+		<label class="op">
+			<input type="radio" name="difficulty" value="2"/><span class="l">Medium</span>
+		</label>
+		<label class="op">
+			<input type="radio" name="difficulty" value="3"/><span class="l">Extreme</span>
+		</label>
+	</div>
+	<button>Play!</button>
+</form>
+
+
+
+
+	<script src="js/main.js"></script>
+	<script src="js/jquery.min.js"></script>
+</body>
+</html>
