@@ -39,6 +39,7 @@ button {
 	border-radius: 1.6vmin;
 	background: #edf0da;
 	position: fixed;
+	min-height: 150px;
 	height: 40vh;
 	width: 40vw;
 	top: 20vh;
@@ -65,8 +66,8 @@ button {
 #leadersButton,
 #leadersCloseButton {
 	position: absolute;
-	width: 6rem;
-	height: 6rem;
+	width: 7rem;
+	height: 7rem;
 	top: -3rem;
 	right: -3rem;
 	background: #edf0da;
@@ -98,7 +99,8 @@ button {
 }
 #leadersButton i,
 #leadersCloseButton i {
-	font-size: 4rem;
+	font-size: 1,5rem;
+	font-weight: bold;
 }
 #greeter h1 {
 	margin: .3em 0;
@@ -421,18 +423,18 @@ button {
 	height: 16.66666667%;
 }
 #board #cards[data-difficulty="2"] .card i {
-	font-size: 12vh;
-	top: calc(50% - 6vh);
-	left: calc(50% - 6vh);
+	font-size: 10vh;
+	top: calc(50% - 5vh);
+	left: calc(50% - 5vh);
 }
 #board #cards[data-difficulty="3"] .card {
 	width: 12.5%;
 	height: 12.5%;
 }
 #board #cards[data-difficulty="3"] .card i {
-	font-size: 10vh;
-	top: calc(50% - 5vh);
-	left: calc(50% - 5vh);
+	font-size: 6vh;
+	top: calc(50% - 3vh);
+	left: calc(50% - 3vh);
 }
 #board.locked #cards {
 	pointer-events: none;
@@ -440,11 +442,13 @@ button {
 #board.playing ~ #greeter {
 	-webkit-transform: translateY(-300%) scale(0);
 	transform: translateY(-300%) scale(0);
+	padding: 10% 10% 10% 10%;
 	opacity: 0;
 }
 #board.playing {
 	pointer-events: auto;
 	opacity: 1;
+	padding: 10% 10% 10% 10%;
 }
 #board.completed ~ #leaders {
 	opacity: 1;
@@ -455,4 +459,7 @@ button {
 }
 #leaders.visible ~ #greeter {
 	display: none;
+}
+div#cards{
+	margin:5%;
 }
